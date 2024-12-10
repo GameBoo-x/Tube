@@ -441,3 +441,6 @@ const Game = () => {
 };
 render( /*#__PURE__*/React.createElement(Game, null), rootNode);
 
+window.Telegram.WebApp.setHeaderColor('#000000');
+window.Telegram.WebApp.setBackgroundColor('#202020');
+
