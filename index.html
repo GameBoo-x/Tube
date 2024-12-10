@@ -1,55 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tube X</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background: #000;
-            color: #fff;
-            text-align: center;
-        }
+  <meta charset="UTF-8">
+  <title>Hexadecimal Hangman #CodePenChallenge 🕹🎨</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
 
-        iframe {
-            width: 80%;
-            height: 60vh;
-            border: none;
-            allow: fullscreen;
-        }
-
-        h1 {
-            background: linear-gradient(to right, #ff0000, #800080);
-            -webkit-background-clip: text;
-            color: transparent;
-        }
-    </style>
 </head>
 <body>
-    <h1>Tube X</h1>
-    <iframe id="videoFrame" src="" allow="fullscreen"></iframe>
-    <script>
-        function getParameterByName(name) {
-            const url = window.location.href;
-            const paramValue = new URL(url).searchParams.get(name);
-            return paramValue ? paramValue : '';
-        }
+<!-- partial:index.partial.html -->
+<div id="app">
+  <h1>Loading...</h1>
+</div>
+<!-- partial -->
+  <script src='https://unpkg.com/react@16.7.0-alpha.2/umd/react.development.js'></script>
+<script src='https://unpkg.com/react-dom@16.7.0-alpha.2/umd/react-dom.development.js'></script>
+<script src='https://unpkg.com/styled-components/dist/styled-components.min.js'></script><script  src="./script.js"></script>
 
-        function setVideoUrl(videoId) {
-            document.getElementById('videoFrame').src = `https://www.youtube.com/embed/${videoId}`;
-        }
-
-        const videoId = getParameterByName('video_id');
-        if (videoId) {
-            setVideoUrl(videoId);
-        }
-    </script>
 </body>
 </html>
